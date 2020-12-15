@@ -18,7 +18,7 @@ const cipher = {//esto es un objeto
                   }   
     }
     
-    return array.join("") //retornar el texto codificado
+    return array.join(" ") //retornar el texto codificado
 },
 
 
