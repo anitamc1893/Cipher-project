@@ -1,89 +1,279 @@
 * {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-size: 1rem;
-    line-height: 1.5;
-    color: #333;
-    overflow-x: hidden;
-  }
-  
-  .header {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    color: #fff;
-  }
-  
-  .content {
-    max-width: 40rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    margin: auto;
-    text-align: center;
-  }
-  
-  .header-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-  }
-  
-  .header-video video {
-    min-width: 100%;
-    min-height: 100%;
-  }
-  
-  .header-overlay {
-    height: 100vh;
-    width: 100vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #03055e;
-    z-index: 1;
-    opacity: .55;
-  }
-  
-  .header-content {
-    z-index: 2;
-  }
-  
-  .header-content h1 {
-    font-size: 80px;
-    margin-bottom: 0;
-    font-family: 'Lobster', cursive;
-  }
+  box-sizing: border-box;
+}
 
-   #cita {
-    font-size: 40px;
-    line-height: 40px;
-    font-family: 'Marck Script';
+body {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.content {
+  max-width: 40rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  text-align: center;
+}
+
+.header-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.header-video video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #03055e;
+  z-index: 1;
+  opacity: 0.55;
+}
+
+.header-content {
+  z-index: 2;
+}
+
+.header-content h1 {
+  font-size: 80px;
+  margin-bottom: 0;
+  font-family: "Lobster", cursive;
+}
+
+#cita {
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "Marck Script";
+}
+
+.header-content p {
+  font-size: 1.5rem;
+  display: block;
+  padding-bottom: 2rem;
+}
+
+.btn {
+  background: #c44569;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  border-radius: 25px;
+  border-style: groove;
+}
+
+@media (max-width: 1200px) {
+  .content {
+    padding: 0 3rem 0 3rem;
   }
-  
-  .header-content p {
-    font-size: 1.5rem;
-    display: block;
-    padding-bottom: 2rem;
-  }
-  
-  .btn {
-    background: #c44569;
-    color: #fff;
-    font-size: 2rem;
-    padding: 1rem 2rem;
-    text-decoration: none;
-    border-radius: 25px;
-    border-style: groove;
-  }
-  
-  @media (max-width: 1200px) {
-    .content {
-      padding: 0 3rem 0 3rem;
-    }
-  }
+}
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  background-image: linear-gradient(to top, #d299c2 10%, #fef9d7 100%);
+  background-image: url(assets/fondo2.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+legend {
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Sansita Swashed";
+}
+
+label {
+  font-size: 20px;
+  line-height: 40px;
+  font-family: "Sansita Swashed";
+}
+
+#formulario {
+  width: 500px;
+  height: 770px;
+  background-image: linear-gradient(
+    20deg,
+    #ddd6f3 0%,
+    #faaca8 100%,
+    #faaca8 100%
+  );
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 800px;
+  margin: auto;
+  float: left;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  border-style: groove;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: #9d8189;
+}
+
+#formulario2 {
+  width: 500px;
+  height: 770px;
+  background-image: linear-gradient(
+    -20deg,
+    #ddd6f3 0%,
+    #faaca8 100%,
+    #faaca8 100%
+  );
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 800px;
+  right: 0px;
+  margin: auto;
+  float: right;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  border-style: groove;
+  border-width: 8px;
+  border-radius: 10px;
+  border-color: #9d8189;
+}
+
+textarea {
+  height: 110px;
+  width: 400px;
+}
+
+.papel {
+  border: 1px solid #eeeeee;
+  box-shadow: 1px 1px 0 #dddddd;
+  display: block;
+  font-family: "Marck Script", cursive;
+  font-size: 22px;
+  line-height: 50px;
+  margin: 2% auto;
+  padding: 11px 20px 0 70px;
+  resize: none;
+  height: 350px;
+  width: 400px;
+
+  background-image: -moz-linear-gradient(
+      top,
+      transparent,
+      transparent 49px,
+      #222527 0px
+    ),
+    -moz-radial-gradient(4% 50%, circle closest-corner, #f5f5f5, #f5f5f5 39%, transparent
+          0%),
+    -moz-radial-gradient(3.9% 46%, circle closest-corner, #cccccc, #cccccc 43.5%, transparent
+          0%);
+
+  -webkit-background-size: 100% 50px;
+  background-size: 100% 50px;
+
+  font-size: 30px;
+  line-height: 40px;
+  font-family: "Caveat";
+
+  background-color: rgba(211, 231, 231, 0.644);
+}
+
+input {
+  background-color: rgba(245, 132, 220, 0.3);
+  border-style: outset;
+  border-radius: 5px;
+  border-width: 3px;
+  width: 5em;
+  height: 30px;
+}
+
+#texto {
+  background-image: linear-gradient(20deg, #b895ec 0%, #fceddb 100%);
+  border-style: groove;
+  border-radius: 5px;
+  border-width: 10px;
+  border-color: rgba(235, 34, 208, 0.3);
+  resize: none;
+}
+
+#texto2 {
+  background-image: linear-gradient(-20deg, #b895ec 0%, #fceddb 100%);
+  border-style: groove;
+  border-radius: 5px;
+  border-width: 10px;
+  border-color: rgba(235, 34, 208, 0.3);
+  resize: none;
+}
+
+button {
+  padding: 1rem 4rem;
+  background: #3b89b6;
+  border: 0.1rem solid #4896c4;
+  cursor: pointer;
+  position: relative;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
+
+button::before {
+  content: "Enviar";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem #333;
+  transition: 0.2s;
+}
+
+button::after {
+  content: "Listo!";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1rem;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 700;
+  text-shadow: 0.1rem 0.1rem #333;
+  transition: 0.2s;
+  opacity: 0;
+}
+
+button:hover::before {
+  transform: translate(-50%, -50%) scale(3);
+  opacity: 0;
+}
+
+button:hover::after {
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 1;
+}

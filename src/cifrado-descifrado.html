@@ -1,29 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Espacio personal</title>
-</head>
-<body>
-        <form  id="formulario">
-            <fieldset>
-                <legend>Cifrado</legend>
-            <label>Ingresa el offset.</label>
-            <input type="number" name="recorrido" id="recorrido" class="recorrido" placeholder="#">
-            <br>
-            <br>
-            <label>Ingresa el texto a cifrar.</label>
-            <br>
-            <br>
-            <textarea name="texto" id="texto" class="texto" cols="30" rows="10"></textarea> 
-            <br>
-            <br>
-            <input id="boton" type="submit" value="Enviar">
-        </fieldset>
-        </form>
-        <div class="espejo"></div>
-        <script type="module" src="index.js"></script>
-
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form id="formulario">
+      <legend>Cifrado</legend>
+      <br />
+      <label>Ingresa el offset.</label>
+      <input
+        type="number"
+        name="recorrido"
+        id="recorrido"
+        class="recorrido"
+        min="0"
+        max="26"
+        placeholder="#"
+      />
+      <br />
+      <br />
+      <label>Ingresa el texto a cifrar.</label>
+      <br />
+      <textarea
+        name="texto"
+        id="texto"
+        class="texto"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <br />
+      <button id="boton"></button>
+      <br />
+      <br />
+      <textarea class="papel" id="textCifrado" cols="30" rows="10"></textarea>
+    </form>
+    <form id="formulario2">
+      <legend>Descifrado</legend>
+      <br />
+      <label>Ingresa el offset.</label>
+      <input
+        type="number"
+        name="recorrido2"
+        id="recorrido2"
+        class="recorrido"
+        min="1"
+        max="26"
+        placeholder="#"
+        oninvalid="this.setCustomValidity('El mensaje que se desea mostrar')"
+      />
+      <br />
+      <br />
+      <label>Ingresa el texto a descifrar.</label>
+      <br />
+      <textarea
+        name="texto"
+        id="texto2"
+        class="texto2"
+        cols="30"
+        rows="10"
+      ></textarea>
+      <br />
+      <br />
+      <button id="boton2"></button>
+      <br />
+      <br />
+      <textarea
+        class="papel"
+        id="textDescifrado"
+        cols="30"
+        rows="10"
+      ></textarea>
+    </form>
+    <script type="module" src="index.js"></script>
+  </body>
 </html>
